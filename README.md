@@ -73,18 +73,6 @@ Most naive RAG implementations suffer from **hallucinations, vocabulary mismatch
 
 ---
 
-## 🎯 How to Feature This Project on Your Resume
-
-Copy and adapt this entry directly into your resume:
-
-```text
-NexRAG Enterprise: Production Agentic RAG Platform | Python, FastAPI, Streamlit, Docker
-• Engineered an end-to-end Agentic RAG system over multi-source corporate documentation using Reciprocal Rank Fusion (RRF) combining BM25 sparse search and dense vector embeddings, boosting retrieval recall by 31%.
-• Integrated a Cross-Encoder precision reranker and automated HyDE query expansion, achieving sub-5ms local candidate reranking.
-• Implemented multi-tier guardrails including heuristic prompt-injection scanners, PII redaction (email, SSN, API keys), and claim-level faithfulness verification (hallucination detection).
-• Built an automated Ragas-style evaluation harness measuring Faithfulness (85%+), Answer Relevance, Context Precision, and Recall across curated ground-truth benchmarks.
-• Packaged with FastAPI REST endpoints, interactive Streamlit telemetry dashboard, and Docker container orchestration.
-```
 
 ---
 
