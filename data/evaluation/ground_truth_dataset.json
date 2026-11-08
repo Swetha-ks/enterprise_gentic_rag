@@ -1,0 +1,48 @@
+{
+  "dataset_name": "Enterprise RAG Evaluation Ground Truth Benchmark",
+  "version": "1.0",
+  "samples": [
+    {
+      "id": "SEC-01",
+      "question": "What is the mandatory session timeout policy for web console sessions?",
+      "ground_truth_context": "Web console sessions automatically terminate after 15 minutes of inactivity. CLI and API session tokens expire after a maximum of 8 hours and require re-authentication.",
+      "ground_truth_answer": "Web console sessions automatically terminate after 15 minutes of inactivity."
+    },
+    {
+      "id": "SEC-02",
+      "question": "What cryptographic standards are required for encryption at rest and in transit?",
+      "ground_truth_context": "All databases, S3 buckets, and persistent volumes must use AES-256 encryption or customer-managed KMS keys. All network communication across public and private endpoints requires TLS 1.3.",
+      "ground_truth_answer": "AES-256 is required for encryption at rest, and TLS 1.3 is required for all data in transit."
+    },
+    {
+      "id": "SEC-03",
+      "question": "What is the incident notification SLA for a Severity 0 critical breach?",
+      "ground_truth_context": "Severity 0 (P0 - Critical Breach/System Outage): Incident commander assigned within 15 minutes. Customer notification and regulatory disclosure within 1 hour of confirmation.",
+      "ground_truth_answer": "Customer notification and regulatory disclosure must occur within 1 hour of confirmation."
+    },
+    {
+      "id": "AI-01",
+      "question": "What is the required faithfulness threshold for Tier 2 customer-facing AI agents?",
+      "ground_truth_context": "Tier 2 (Customer-Facing AI & Autonomous Agents): Hallucination Threshold: Must pass automated Faithfulness evaluation with a score of >= 0.85 on the standardized corporate benchmark.",
+      "ground_truth_answer": "Customer-facing AI agents must achieve a Faithfulness evaluation score of 0.85 or higher."
+    },
+    {
+      "id": "AI-02",
+      "question": "What drop in context recall or faithfulness triggers an automated rollback?",
+      "ground_truth_context": "Any model update or prompt modification resulting in a drop greater than 3% in Context Recall or Faithfulness will trigger an automated deployment rollback.",
+      "ground_truth_answer": "A drop greater than 3% in Context Recall or Faithfulness triggers an automated deployment rollback."
+    },
+    {
+      "id": "FIN-01",
+      "question": "What was the company's Annual Recurring Revenue (ARR) in Q3 2026?",
+      "ground_truth_context": "Annual Recurring Revenue (ARR): Closed Q3 at $42.5 Million, representing a 34% Year-over-Year (YoY) growth compared to $31.7 Million in Q3 2025.",
+      "ground_truth_answer": "The ARR was $42.5 Million in Q3 2026, representing a 34% YoY growth."
+    },
+    {
+      "id": "FIN-02",
+      "question": "How did the team achieve a 14% reduction in cloud computing expenditure?",
+      "ground_truth_context": "Implemented 4-bit AWQ model quantization and local vLLM serving clusters for tier-1 RAG queries, reducing external API token spend by $120,000 monthly, plus hybrid search caching.",
+      "ground_truth_answer": "By implementing 4-bit AWQ model quantization, local vLLM clusters, and hybrid search vector caching."
+    }
+  ]
+}

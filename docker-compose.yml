@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    command: python run_server.py
+    ports:
+      - "8000:8000"
+    environment:
+      - LLM_PROVIDER=mock
+    volumes:
+      - ./data:/app/data
+      - ./storage:/app/storage
+
+  dashboard:
+    build: .
+    command: python run_ui.py
+    ports:
+      - "8501:8501"
+    environment:
+      - LLM_PROVIDER=mock
+    depends_on:
+      - api
+    volumes:
+      - ./data:/app/data

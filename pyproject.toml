@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enterprise-agentic-rag"
+version = "1.0.0"
+description = "Enterprise Agentic RAG System with Hybrid Search, Guardrails, and Ragas-style Evaluation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0",
+    "pydantic>=2.6.0",
+    "streamlit>=1.32.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "pypdf>=4.0.0"
+]
